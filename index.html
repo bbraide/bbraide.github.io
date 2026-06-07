@@ -150,11 +150,16 @@ body.collapsed #main{margin-left:var(--sidebar-collapsed);}
 /* RENDERS */
 .renders-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:2rem;}
 .render-thumb{
-  aspect-ratio:1;border-radius:8px;overflow:hidden;
+  border-radius:8px;
   border:0.5px solid var(--lavender);cursor:pointer;
 }
-.render-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;}
+.render-thumb img{
+  aspect-ratio:1;width:100%;border-radius:8px;
+  object-fit:cover;display:block;transition:transform 0.3s ease;
+}
 .render-thumb:hover img{transform:scale(1.05);}
+/* .render-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;} */
+/* .render-thumb:hover img{transform:scale(1.05);} */
 
 /* PROJECT TABS */
 .tab-bar{display:flex;gap:0;border:0.5px solid var(--lavender);border-radius:8px;overflow:hidden;margin-bottom:1.5rem;}
